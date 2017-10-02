@@ -1,5 +1,5 @@
-name: vault
-version: master
+name: vaultproject-alexcohn
+version: v0.8.3-git
 summary: Vault is a tool for securely accessing secrets.
 description: |
   A modern system requires access to a multitude of secrets: database
@@ -20,7 +20,7 @@ apps:
 parts:
   vault:
     source: https://github.com/hashicorp/vault.git
-    source-tag: master
+    source-tag: v0.8.3
     plugin: go
     go-importpath: github.com/hashicorp/vault
     go-buildtags: [vault]
